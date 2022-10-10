@@ -5,7 +5,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class SeatWidget extends StatefulWidget {
   final SeatModel model;
-  final void Function(int rowI, int colI, SeatState currentState) onSeatStateChanged;
+  final void Function(int rowI, int colI, SeatState currentState)
+      onSeatStateChanged;
 
   const SeatWidget({
     Key? key,
