@@ -1,13 +1,12 @@
-import 'package:book_my_seat/src/model/SeatLayoutStateModel.dart';
-import 'package:book_my_seat/src/model/SeatModel.dart';
+import 'package:book_my_seat/src/model/seat_layout_state_model.dart';
+import 'package:book_my_seat/src/model/seat_model.dart';
 import 'package:book_my_seat/src/utils/seat_state.dart';
-import 'package:book_my_seat/src/widgets/SeatWidget.dart';
+import 'package:book_my_seat/src/widgets/seat_widget.dart';
 import 'package:flutter/material.dart';
 
 class SeatLayoutWidget extends StatelessWidget {
   final SeatLayoutStateModel stateModel;
-  final void Function(int rowI, int colI, SeatState currentState)
-      onSeatStateChanged;
+  final void Function(int rowI, int colI, SeatState currentState) onSeatStateChanged;
 
   const SeatLayoutWidget({
     Key? key,
@@ -31,16 +30,14 @@ class SeatLayoutWidget extends StatelessWidget {
                     ...List<int>.generate(stateModel.cols, (colI) => colI)
                         .map<SeatWidget>((colI) => SeatWidget(
                               model: SeatModel(
-                                seatState: stateModel.currentSeatsState[rowI]
-                                    [colI],
+                                seatState: stateModel.currentSeatsState[rowI][colI],
                                 rowI: rowI,
                                 colI: colI,
                                 seatSvgSize: stateModel.seatSvgSize,
                                 pathSelectedSeat: stateModel.pathSelectedSeat,
                                 pathDisabledSeat: stateModel.pathDisabledSeat,
                                 pathSoldSeat: stateModel.pathSoldSeat,
-                                pathUnSelectedSeat:
-                                    stateModel.pathUnSelectedSeat,
+                                pathUnSelectedSeat: stateModel.pathUnSelectedSeat,
                               ),
                               onSeatStateChanged: onSeatStateChanged,
                             ))

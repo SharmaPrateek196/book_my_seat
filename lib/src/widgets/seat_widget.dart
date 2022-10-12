@@ -1,12 +1,11 @@
-import 'package:book_my_seat/src/model/SeatModel.dart';
+import 'package:book_my_seat/src/model/seat_model.dart';
 import 'package:book_my_seat/src/utils/seat_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SeatWidget extends StatefulWidget {
   final SeatModel model;
-  final void Function(int rowI, int colI, SeatState currentState)
-      onSeatStateChanged;
+  final void Function(int rowI, int colI, SeatState currentState) onSeatStateChanged;
 
   const SeatWidget({
     Key? key,
