@@ -1,6 +1,6 @@
 name: book_my_seat
 description: This is a flutter package to create seat booking layout for bus, theatre, aeroplane etc.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/SharmaPrateek196/book_my_seat
 
 environment:

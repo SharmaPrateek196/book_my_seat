@@ -7,14 +7,14 @@ This is a flutter package to create seat booking layout for bus, theatre, aeropl
 ## Example project and blog for better understanding 🚀
 <a href="https://medium.com/@sharmaprateek196/how-to-create-seat-booking-layout-in-flutter-33cff82b3edc">Read my article with example</a>
 
-## Getting Started
+## Getting Started 🤩
 Add this dependency in your pubspec.yaml file
 ```dart
 dependencies:
   book_my_seat: <version number>
 ```
 
-## How to use
+## How to use ⌨️
 #### First, import it:
 ```dart
 import 'package:book_my_seat/book_my_seat.dart';
@@ -69,6 +69,9 @@ Brief description of each:
 ## Example project and blog for better understanding 🚀
 <a href="https://medium.com/@sharmaprateek196/how-to-create-seat-booking-layout-in-flutter-33cff82b3edc">Read my article with example</a>
 
-## If you like this package, please do a thumbs up on it on pub.dev, give star on github and you can buy me a coffee also 👇
+## Contributors 💻
+Prateek Sharma - [Linkedin](https://www.linkedin.com/in/sharmaprateek196/) | [Github](https://github.com/SharmaPrateek196)
+
+## If you like this package, please do a thumbs up on it on pub.dev, give star on github and you can buy me a coffee also 🙏👇
 
 <a href="https://www.buymeacoffee.com/SharmaPrateek" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
